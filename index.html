@@ -3,58 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
+  <title>Portofolio Modern</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- BAGIAN 1: SELAMAT DATANG -->
-  <header id="welcome">
+  <!-- Bagian 1: Welcome -->
+  <section id="welcome" class="section welcome">
     <h1>Selamat Datang di Portofolio Saya</h1>
-    <p>Halo, saya Rehan — Web Developer & Programmer</p>
-  </header>
+    <p>Halo, saya <strong>Nama Kamu</strong>. Web Developer modern & kreatif.</p>
+  </section>
 
-  <!-- BAGIAN 2: SKILL, DATA DIRI, PROJECT -->
-  <section id="about">
-    <h2>Tentang Saya & Skill</h2>
-    <div class="skills">
-      <div class="card">
-        <h3>Data Diri</h3>
-        <p>Nama: Rehan</p>
-        <p>Profesi: Web Developer</p>
-        <p>Email: rehan@example.com</p>
-      </div>
-      <div class="card">
-        <h3>Skill</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Python & Flask</li>
-          <li>Node.js & Express</li>
-          <li>UI/UX Design</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Project</h3>
-        <p>- Website E-Commerce</p>
-        <p>- Aplikasi Bot Telegram</p>
-        <p>- Sistem Manajemen Keuangan</p>
-      </div>
+  <!-- Bagian 2: Tentang & Skill -->
+  <section id="about" class="section about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah developer yang fokus pada web modern, clean design & integrasi sosial.</p>
+
+    <h3>Skill</h3>
+    <ul class="skills">
+      <li>HTML, CSS, JavaScript</li>
+      <li>React & Tailwind</li>
+      <li>Node.js & API Integrasi</li>
+      <li>UI/UX Design</li>
+    </ul>
+
+    <h3>Project</h3>
+    <div class="projects">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+      <div class="card">Project 3</div>
     </div>
   </section>
 
-  <!-- BAGIAN 3: ORDER -->
-  <section id="order">
-    <h2>Order / Hubungi Saya</h2>
-    <form>
-      <input type="text" placeholder="Nama Anda" required>
-      <input type="email" placeholder="Email Anda" required>
-      <textarea rows="5" placeholder="Tuliskan kebutuhan atau pesan Anda" required></textarea>
-      <button type="submit">Kirim Pesan</button>
+  <!-- Bagian 3: Order -->
+  <section id="order" class="section order">
+    <h2>Order Project</h2>
+    <form id="orderForm">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Deskripsi Project" required></textarea>
+      <button type="submit">Kirim</button>
     </form>
+    <p id="formMessage"></p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Rehan - Semua Hak Dilindungi</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
