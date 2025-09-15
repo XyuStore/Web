@@ -1,51 +1,263 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Modern</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Bagian 1: Welcome -->
-  <section id="welcome" class="section welcome">
-    <h1>Selamat Datang di Portofolio Saya</h1>
-    <p>Halo, saya <strong>Nama Kamu</strong>. Web Developer modern & kreatif.</p>
-  </section>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==========================================
+                  Box Icons
+    =========================================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==========================================
+                  Custom CSS
+    =========================================== -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==========================================
+                  Breakpoint
+    =========================================== -->
+    <link rel="stylesheet" href="breakpoint.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- ==========================================
+                    Header
+    =========================================== -->
+    <header class="header">
+      <a href="#" class="logo">REV<span>Dev.</span></a>
 
-  <!-- Bagian 2: Tentang & Skill -->
-  <section id="about" class="section about">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah developer yang fokus pada web modern, clean design & integrasi sosial.</p>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-    <h3>Skill</h3>
-    <ul class="skills">
-      <li>HTML, CSS, JavaScript</li>
-      <li>React & Tailwind</li>
-      <li>Node.js & API Integrasi</li>
-      <li>UI/UX Design</li>
-    </ul>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <h3>Project</h3>
-    <div class="projects">
-      <div class="card">Project 1</div>
-      <div class="card">Project 2</div>
-      <div class="card">Project 3</div>
-    </div>
-  </section>
+    <!-- ==========================================
+                  Home Section
+    =========================================== -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Revangga</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <!-- add link for your CV into `href` -->
+        <a href="" class="btn">Download CV</a>
+      </div>
 
-  <!-- Bagian 3: Order -->
-  <section id="order" class="section order">
-    <h2>Order Project</h2>
-    <form id="orderForm">
-      <input type="text" placeholder="Nama" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Deskripsi Project" required></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-    <p id="formMessage"></p>
-  </section>
+      <div class="home-img">
+        <img src="assets/image/home1.png" alt="home" />
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- ==========================================
+                  About Section
+    =========================================== -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/image/about1.png" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+          Innovative Freelance Front-End Developer with 3+ Years at Upwork
+          Seeking New Challenges | Bachelor of Informatics Grad | Proficient in
+          HTML, CSS, JS, PHP, MongoDB, Express.js, React, Node.js | Eager to
+          Bring Problem-Solving and Critical Thinking Skills to Your Team.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Services Section
+    =========================================== -->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Front End</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+            atque voluptate saepe magni aspernatur id nemo quasi quibusdam
+            ratione.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            fugiat quaerat vero magnam? Sunt exercitationem atque distinctio
+            deleniti culpa minus.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-data"></i>
+          <h3>Back End</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+            atque voluptate saepe magni aspernatur id nemo quasi quibusdam
+            ratione.
+          </p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Portfolio Section
+    =========================================== -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="assets/image/img2.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Provident, nihil.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/img2.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+              dignissimos.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/img4.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus, sequi!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/img4.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              nulla?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/img6.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              cum!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/img6.png" alt="portfolio" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Contact Section
+    =========================================== -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- ==========================================
+                    Footer
+    =========================================== -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Callmerev | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+                  Scroll Reveal
+    =========================================== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==========================================
+                   Typed Js
+    =========================================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- ==========================================
+                  Custom Js
+    =========================================== -->
+    <script src="main.js"></script>
+  </body>
+      </html>
