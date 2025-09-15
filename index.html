@@ -3,86 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dusun Store</title>
+  <title>Portofolio Saya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🛒 Dusun Store</h1>
-    <nav>
-      <a href="#produk">Produk Utama</a>
-      <a href="#daftar-produk">Daftar Produk</a>
-      <a href="#payment">Payment</a>
-    </nav>
+  <!-- BAGIAN 1: SELAMAT DATANG -->
+  <header id="welcome">
+    <h1>Selamat Datang di Portofolio Saya</h1>
+    <p>Halo, saya Rehan — Web Developer & Programmer</p>
   </header>
 
-  <!-- Bagian 1: Produk Utama -->
-  <section id="produk" class="highlight">
-    <h2>Produk Utama</h2>
-    <div class="product-highlight">
-      <img src="https://via.placeholder.com/300x200" alt="Produk Utama">
-      <div class="info">
-        <h3>Beras Organik 5kg</h3>
-        <p>Beras murni hasil panen dusun, sehat dan alami tanpa bahan kimia.</p>
-        <p class="price">Rp 80.000</p>
-        <button onclick="addToCart('Beras Organik 5kg', 80000)">Tambah ke Keranjang</button>
+  <!-- BAGIAN 2: SKILL, DATA DIRI, PROJECT -->
+  <section id="about">
+    <h2>Tentang Saya & Skill</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Data Diri</h3>
+        <p>Nama: Rehan</p>
+        <p>Profesi: Web Developer</p>
+        <p>Email: rehan@example.com</p>
+      </div>
+      <div class="card">
+        <h3>Skill</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python & Flask</li>
+          <li>Node.js & Express</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Project</h3>
+        <p>- Website E-Commerce</p>
+        <p>- Aplikasi Bot Telegram</p>
+        <p>- Sistem Manajemen Keuangan</p>
       </div>
     </div>
   </section>
 
-  <!-- Bagian 2: Daftar Produk -->
-  <section id="daftar-produk">
-    <h2>Daftar Produk</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="https://via.placeholder.com/200x150" alt="Produk 1">
-        <h3>Madu Hutan 500ml</h3>
-        <p>Asli dari lebah dusun, manis dan menyehatkan.</p>
-        <p class="price">Rp 50.000</p>
-        <button onclick="addToCart('Madu Hutan 500ml', 50000)">Tambah ke Keranjang</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200x150" alt="Produk 2">
-        <h3>Kopi Dusun 250gr</h3>
-        <p>Biji kopi pilihan dengan aroma khas pedesaan.</p>
-        <p class="price">Rp 35.000</p>
-        <button onclick="addToCart('Kopi Dusun 250gr', 35000)">Tambah ke Keranjang</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200x150" alt="Produk 3">
-        <h3>Telur Kampung 1kg</h3>
-        <p>Telur ayam kampung asli, segar dari dusun.</p>
-        <p class="price">Rp 30.000</p>
-        <button onclick="addToCart('Telur Kampung 1kg', 30000)">Tambah ke Keranjang</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bagian 3: Payment -->
-  <section id="payment">
-    <h2>Payment</h2>
-    <div class="cart">
-      <h3>Keranjang Belanja</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: Rp <span id="total">0</span></p>
-    </div>
-    <form id="payment-form">
-      <label>Nama Lengkap</label>
-      <input type="text" required>
-      <label>Alamat</label>
-      <textarea required></textarea>
-      <label>Metode Pembayaran</label>
-      <select>
-        <option>Transfer Bank</option>
-        <option>COD (Bayar di Tempat)</option>
-        <option>e-Wallet</option>
-      </select>
-      <button type="submit">Bayar Sekarang</button>
+  <!-- BAGIAN 3: ORDER -->
+  <section id="order">
+    <h2>Order / Hubungi Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea rows="5" placeholder="Tuliskan kebutuhan atau pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Dusun Store - Semua Hak Dilindungi</p>
+    <p>&copy; 2025 Rehan - Semua Hak Dilindungi</p>
   </footer>
 
   <script src="script.js"></script>
