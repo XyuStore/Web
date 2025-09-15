@@ -1,28 +1,21 @@
-let cart = [];
-let total = 0;
-
-function addToCart(product, price) {
-  cart.push({ product, price });
-  total += price;
-  updateCart();
-}
-
-function updateCart() {
-  const cartItems = document.getElementById("cart-items");
-  cartItems.innerHTML = "";
-  cart.forEach(item => {
-    let li = document.createElement("li");
-    li.textContent = `${item.product} - Rp ${item.price}`;
-    cartItems.appendChild(li);
+// Animasi sederhana: muncul pelan saat scroll
+document.addEventListener("scroll", () => {
+  const elements = document.querySelectorAll("section, .card, form");
+  elements.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 50) {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    }
   });
-  document.getElementById("total").textContent = total;
-}
-
-document.getElementById("payment-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Pembayaran berhasil! Terima kasih sudah belanja di Dusun Store.");
-  cart = [];
-  total = 0;
-  updateCart();
-  this.reset();
 });
+
+// Atur style awal (sembunyi dulu)
+window.onload = () => {
+  const elements = document.querySelectorAll("section, .card, form");
+  elements.forEach(el => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all 0.8s ease";
+  });
+};
